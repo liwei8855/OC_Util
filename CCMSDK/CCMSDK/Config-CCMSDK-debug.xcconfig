@@ -1,0 +1,27 @@
+//
+//  Config-CCMSDK-debug.xcconfig
+//  CCMSDK
+//
+//  Created by 李威 on 2022/6/2.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+//并不是所有的变量都能通过scconfig配置到build setting中
+//引入其他配置
+//#include "otherconfig.xcconfig"
+
+//${SRCROOT} 相对路径
+//$(inherited) 继承之前的值
+//链接库
+//OTHER_LDFLAGS = -framework SDWebImage
+
+// 指定Configration：`Debug`
+// 指定`SDK`是模拟器 还有iphoneos、macosx等
+//指定架构arch：`x86_64`
+//OTHER_LDFLAGS[config=Debug][sdk=iphonesimulator*[arch=x86_64]= $(inherited) -framework "framework"
+
+//-all_load如果使用了分类，必须配置 否则无法访问,打包成Dynamic Library不需要配置
+OTHER_LDFLAGS = $(inherited) -Xlinker -all_load
+OTHER_CFLAGS = $(inherited) -fembed-bitcode

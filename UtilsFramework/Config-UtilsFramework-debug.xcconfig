@@ -7,4 +7,31 @@
 
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
+TTY = /dev/ttys002
+//传入的目录
+MACHO_PATH=${BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/*
+
+//cmd要执行的命令
+
+
+//nm： 查看macho符号表  -p 不排序 -a 输出全部符号表
+//nm -pa ${MACHO_PATH}
+//查看mach-o文件所有test sections
+//objdump --macho -d ${MACHO_PATH}
+//查看 macho header
+//objdump --macho -private-header ${MACHO_PATH}
+//查看 macho header：显示的是原始数据，不方便阅读
+//otool -h ${MACHO_PATH}
+//查看 __text段
+//objdump --macho -d ${MACHO_PATH}
+CMD = objdump --macho -d ${MACHO_PATH}
+
+
+
+
+
+
+
+
+
 
