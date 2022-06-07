@@ -1,0 +1,6 @@
+framework module CCMSDK {
+  umbrella header "CCMSDK.h"
+
+  export *
+  module * { export * }
+}

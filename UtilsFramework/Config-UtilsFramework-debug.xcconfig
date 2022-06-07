@@ -26,6 +26,8 @@ MACHO_PATH=${BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/*
 //objdump --macho -d ${MACHO_PATH}
 CMD = objdump --macho -d ${MACHO_PATH}
 
+//framework search path
+//$(PROJECT_DIR)/framework/
 
 
 
