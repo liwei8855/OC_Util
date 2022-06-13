@@ -22,6 +22,11 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 
+## other
+CCMSDK/Framework
+CCMSDK/CCMSDKBundle
+UtilsFramework/framework
+
 ## Obj-C/Swift specific
 *.hmap
 
