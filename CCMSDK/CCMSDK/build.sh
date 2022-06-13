@@ -12,7 +12,8 @@ TARGET_NAME=$1
 
 fi
 
-UNIVERSAL_OUTPUT_FOLDER="${SRCROOT}/Products/${PROJECT_NAME}/"
+#UNIVERSAL_OUTPUT_FOLDER="${SRCROOT}/Products/${PROJECT_NAME}/"
+UNIVERSAL_OUTPUT_FOLDER="${SRCROOT}/Framework/"
 
 #创建输出目录，并删除之前的framework文件
 
@@ -34,6 +35,11 @@ lipo "${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${TARGET_NAME}.framework/${T
 #合并framework，输出最终的framework到build目录
 
 lipo -create -output "${UNIVERSAL_OUTPUT_FOLDER}/${TARGET_NAME}.framework/${TARGET_NAME}" "${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${TARGET_NAME}.framework/${TARGET_NAME}" "${BUILD_DIR}/${CONFIGURATION}-iphoneos/${TARGET_NAME}.framework/${TARGET_NAME}"
+
+
+#拷贝bundle
+BUNDLE_PATH="${BUILD_DIR}/${CONFIGURATION}-iphoneos/${TARGET_NAME}Bundle.bundle"
+cp -R "${BUNDLE_PATH}" "${UNIVERSAL_OUTPUT_FOLDER}/${TARGET_NAME}.framework"
 
 #删除编译之后生成的无关的配置文件
 
@@ -65,6 +71,11 @@ fi
 
 rm -rf "${BUILD_DIR}/${CONFIGURATION}-iphonesimulator" "${BUILD_DIR}/${CONFIGURATION}-iphoneos"
 
-#打开合并后的文件夹
+#判断目标.a是否存在
+if [[ -f "${dir_path}${TARGET_NAME}" ]]; then
+	echo "======验证.a文件======="
+	lipo -info "${dir_path}${TARGET_NAME}"
+fi
 
+#打开合并后的文件夹
 open "${UNIVERSAL_OUTPUT_FOLDER}"

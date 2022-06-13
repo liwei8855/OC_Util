@@ -9,7 +9,6 @@
 
 #import <CCMSDK/JailUtil.h>
 #import <CCMSDK/NSString+Size.h>
-#import <AFNetworking/AFNetworking.h>
 
 //! Project version number for CCMSDK.
 FOUNDATION_EXPORT double CCMSDKVersionNumber;

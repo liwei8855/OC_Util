@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import <CCMSDK/CCMSDK.h>
 
 @interface ViewController ()
 

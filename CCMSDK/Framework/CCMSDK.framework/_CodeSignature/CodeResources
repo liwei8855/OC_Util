@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/CCMSDK.h</key>
 		<data>
-		WN8GufNpbwi5iAbqtiINS6VNHLY=
+		ATVI4pNbmP1oaZH7exAa8V2A+zA=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -23,11 +23,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WN8GufNpbwi5iAbqtiINS6VNHLY=
+			ATVI4pNbmP1oaZH7exAa8V2A+zA=
 			</data>
 			<key>hash2</key>
 			<data>
-			fxreUYCnH+WkOwrF+s0oDESdyR6N3cm6Y/tr/OmvaKQ=
+			UCFooJmDQBFDXLfseHUVg5yDFUWuU6LRrBNMaaEc8/c=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

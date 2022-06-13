@@ -8,6 +8,7 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
+//https://help.apple.com/xcode/mac/8.3/#/itcaec37c2a6
 //并不是所有的变量都能通过scconfig配置到build setting中
 //引入其他配置
 //#include "otherconfig.xcconfig"
@@ -21,7 +22,12 @@
 // 指定`SDK`是模拟器 还有iphoneos、macosx等
 //指定架构arch：`x86_64`
 //OTHER_LDFLAGS[config=Debug][sdk=iphonesimulator*[arch=x86_64]= $(inherited) -framework "framework"
-
 //-all_load如果使用了分类，必须配置 否则无法访问,打包成Dynamic Library不需要配置
-OTHER_LDFLAGS = $(inherited) -Xlinker -all_load
+
+
+///配置SDK
+//修改build setting
+//base sdk ：iOS
+//liking - Mach-O type: static library
+OTHER_LDFLAGS = $(inherited) "-ObjC"
 OTHER_CFLAGS = $(inherited) -fembed-bitcode
