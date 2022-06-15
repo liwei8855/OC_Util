@@ -23,8 +23,8 @@ DerivedData/
 !default.perspectivev3
 
 ## other
-CCMSDK/Framework
-CCMSDK/CCMSDKBundle
+CCMSDK/Framework/
+CCMSDK/CCMSDKBundle/
 UtilsFramework/framework
 
 ## Obj-C/Swift specific
