@@ -8,6 +8,14 @@
 		<data>
 		ATVI4pNbmP1oaZH7exAa8V2A+zA=
 		</data>
+		<key>Headers/JailUtil.h</key>
+		<data>
+		eH7/S9DRF8lcMlJBci8hit2iTTw=
+		</data>
+		<key>Headers/NSString+Size.h</key>
+		<data>
+		1i/grMc8Vrxo9O8NEfEB58TWZPo=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		dMj6vu9SaUoNHLbsj6zCgxjOVLc=
@@ -28,6 +36,28 @@
 			<key>hash2</key>
 			<data>
 			UCFooJmDQBFDXLfseHUVg5yDFUWuU6LRrBNMaaEc8/c=
+			</data>
+		</dict>
+		<key>Headers/JailUtil.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eH7/S9DRF8lcMlJBci8hit2iTTw=
+			</data>
+			<key>hash2</key>
+			<data>
+			fpAhLz860KmMus3LeKkWIZCa8AXlzg3Js5uhfNlgGuk=
+			</data>
+		</dict>
+		<key>Headers/NSString+Size.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1i/grMc8Vrxo9O8NEfEB58TWZPo=
+			</data>
+			<key>hash2</key>
+			<data>
+			lyUbnuHjU18vGsvd6wxzg6To/Qa35oAR+4HgYRT+zso=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

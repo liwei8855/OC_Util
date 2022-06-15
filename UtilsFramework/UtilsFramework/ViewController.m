@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import <CCMSDK/CCMSDK.h>
 
 @interface ViewController ()
 
@@ -15,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    JailUtil 
     // Do any additional setup after loading the view.
 }
 

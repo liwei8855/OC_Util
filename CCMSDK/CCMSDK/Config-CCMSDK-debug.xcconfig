@@ -31,3 +31,5 @@
 //liking - Mach-O type: static library
 OTHER_LDFLAGS = $(inherited) "-ObjC"
 OTHER_CFLAGS = $(inherited) -fembed-bitcode
+
+//⚠️：.h文件要放到public中，放在protect中会报错Could not build module
