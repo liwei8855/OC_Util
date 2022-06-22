@@ -6,7 +6,16 @@
 //
 
 #import "Common.h"
+#import "CCMUtils.h"
 
 @implementation Common
-
++ (BOOL)isJail {
+    BOOL isJail = NO;
+    if ([JailUtil isJail]) {
+        isJail = YES;
+    } else if ([JailUtil isJailbreak]) {
+        isJail = YES;
+    }
+    return isJail;
+}
 @end

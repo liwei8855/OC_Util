@@ -29,7 +29,9 @@
 //修改build setting
 //base sdk ：iOS
 //liking - Mach-O type: static library
-OTHER_LDFLAGS = $(inherited) "-ObjC"
-OTHER_CFLAGS = $(inherited) -fembed-bitcode
+//OTHER_LDFLAGS = $(inherited) "-ObjC"
+//OTHER_CFLAGS = $(inherited) -fembed-bitcode
 
 //⚠️：.h文件要放到public中，放在protect中会报错Could not build module
+
+LIBRARY_SEARCH_PATHS = $(inherited) "$(PROJECT_DIR)/${PROJECT_NAME}/utils/"

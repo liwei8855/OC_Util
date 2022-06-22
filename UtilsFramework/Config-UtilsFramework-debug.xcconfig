@@ -30,10 +30,14 @@
 //$(PROJECT_DIR)/framework/
 
 //引入CCMSDK静态库后配置
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$(PROJECT_DIR)/framework/"
-HEADER_SEARCH_PATHS = $(inherited) "$(PROJECT_DIR)/framework/Headers/"
-//OTHER_LDFLAGS = $(inherited) "-ObjC"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$(PROJECT_DIR)/${PROJECT_NAME}/framework/"
+HEADER_SEARCH_PATHS = $(inherited) "$(PROJECT_DIR)/${PROJECT_NAME}/framework/CCMSDK.framework/Headers/"
+OTHER_LDFLAGS = $(inherited) "-ObjC"
+
 OTHER_LDFLAGS = $(inherited) -framework "CCMSDK"
+
+//直接引入.a静态库配置路径
+LIBRARY_SEARCH_PATHS = $(inherited) "$(PROJECT_DIR)/${PROJECT_NAME}/framework/"
 
 
 

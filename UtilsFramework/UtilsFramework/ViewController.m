@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-#import <CCMSDK/CCMSDK.h>
+#import "framework/CCMSDK.framework/Headers/CCMSDK.h"
 
 @interface ViewController ()
 
@@ -18,6 +18,8 @@
     [super viewDidLoad];
      
     // Do any additional setup after loading the view.
+    BOOL isJail = [Common isJail];
+    NSLog(@"=====%d",isJail);
 }
 
 

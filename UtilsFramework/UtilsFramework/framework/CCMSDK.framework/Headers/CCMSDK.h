@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-#import <CCMSDK/JailUtil.h>
+#import <CCMSDK/Common.h>
 #import <CCMSDK/NSString+Size.h>
 
 //! Project version number for CCMSDK.
