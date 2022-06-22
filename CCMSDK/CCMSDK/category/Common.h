@@ -1,15 +1,15 @@
 //
-//  JailUtil.h
-//  basic_tips
+//  Common.h
+//  CCMSDK
 //
-//  Created by 李威 on 2022/3/12.
+//  Created by 李威 on 2022/6/22.
 //
 
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JailUtil : NSObject
+@interface Common : NSObject
 
 @end
 

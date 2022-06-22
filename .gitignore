@@ -25,6 +25,7 @@ DerivedData/
 ## other
 CCMSDK/Framework/
 CCMSDK/CCMSDKBundle/
+CCMUtils/Framework/
 UtilsFramework/framework
 
 ## Obj-C/Swift specific
