@@ -23,7 +23,7 @@ DerivedData/
 !default.perspectivev3
 
 ## other
-CCMSDK/Framework/
+CCMSDK/Framework/*
 CCMSDK/CCMSDKBundle/
 CCMUtils/Framework/
 UtilsFramework/framework
