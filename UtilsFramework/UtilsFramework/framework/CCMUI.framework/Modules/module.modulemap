@@ -1,0 +1,6 @@
+framework module CCMUI {
+  umbrella header "CCMUI.h"
+
+  export *
+  module * { export * }
+}

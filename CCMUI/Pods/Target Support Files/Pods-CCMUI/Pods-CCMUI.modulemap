@@ -1,0 +1,6 @@
+framework module Pods_CCMUI {
+  umbrella header "Pods-CCMUI-umbrella.h"
+
+  export *
+  module * { export * }
+}

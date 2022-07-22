@@ -1,0 +1,10 @@
+//
+//  Config-CCMUI-debug.xcconfig
+//  CCMUI
+//
+//  Created by 李威 on 2022/6/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+#include "Pods/Target Support Files/Pods-CCMUI/Pods-CCMUI.debug.xcconfig"
