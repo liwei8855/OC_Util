@@ -12,6 +12,7 @@
 #import "fishhook/fishhook.h"
 
 #import "UIViewController+HOOK.h"
+#import "UtilsFramework-Swift.h"
 
 @interface ViewController ()
 
@@ -25,6 +26,7 @@
     // Do any additional setup after loading the view.
 //    BOOL isJail = [Common isJail];
 //    NSLog(@"=====%d",isJail);
+    
     
 }
 

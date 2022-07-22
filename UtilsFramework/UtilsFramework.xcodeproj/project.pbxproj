@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D04D0771288A629900A5B88C /* SwiftTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04D0770288A629900A5B88C /* SwiftTestCase.swift */; };
+		D04D0775288A830100A5B88C /* MainTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04D0774288A830100A5B88C /* MainTest.swift */; };
 		D0E8949E28728E310053B26E /* CODE_OF_CONDUCT.md in Resources */ = {isa = PBXBuildFile; fileRef = D0E8949728728E310053B26E /* CODE_OF_CONDUCT.md */; };
 		D0E8949F28728E310053B26E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D0E8949828728E310053B26E /* LICENSE */; };
 		D0E894A028728E310053B26E /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = D0E8949928728E310053B26E /* fishhook.c */; };
@@ -54,6 +56,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D04D076F288A629900A5B88C /* UtilsFrameworkTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UtilsFrameworkTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		D04D0770288A629900A5B88C /* SwiftTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTestCase.swift; sourceTree = "<group>"; };
+		D04D0773288A830100A5B88C /* UtilsFramework-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UtilsFramework-Bridging-Header.h"; sourceTree = "<group>"; };
+		D04D0774288A830100A5B88C /* MainTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTest.swift; sourceTree = "<group>"; };
 		D0E8949728728E310053B26E /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
 		D0E8949828728E310053B26E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D0E8949928728E310053B26E /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; tabWidth = 2; };
@@ -194,6 +200,8 @@
 				D0F148CA2844688E00342A3E /* LaunchScreen.storyboard */,
 				D0F148CD2844688E00342A3E /* Info.plist */,
 				D0F148CE2844688E00342A3E /* main.m */,
+				D04D0774288A830100A5B88C /* MainTest.swift */,
+				D04D0773288A830100A5B88C /* UtilsFramework-Bridging-Header.h */,
 			);
 			path = UtilsFramework;
 			sourceTree = "<group>";
@@ -202,6 +210,8 @@
 			isa = PBXGroup;
 			children = (
 				D0F148D82844688F00342A3E /* UtilsFrameworkTests.m */,
+				D04D0770288A629900A5B88C /* SwiftTestCase.swift */,
+				D04D076F288A629900A5B88C /* UtilsFrameworkTests-Bridging-Header.h */,
 			);
 			path = UtilsFrameworkTests;
 			sourceTree = "<group>";
@@ -350,9 +360,11 @@
 				TargetAttributes = {
 					D0F148B82844688C00342A3E = {
 						CreatedOnToolsVersion = 13.2;
+						LastSwiftMigration = 1320;
 					};
 					D0F148D32844688F00342A3E = {
 						CreatedOnToolsVersion = 13.2;
+						LastSwiftMigration = 1320;
 						TestTargetID = D0F148B82844688C00342A3E;
 					};
 					D0F148DD2844688F00342A3E = {
@@ -440,6 +452,7 @@
 			files = (
 				D0E894AC2873E8BF0053B26E /* UIViewController+FishHook.m in Sources */,
 				D0F148C42844688C00342A3E /* ViewController.m in Sources */,
+				D04D0775288A830100A5B88C /* MainTest.swift in Sources */,
 				D0E894A92872C1890053B26E /* UIViewController+HOOK.m in Sources */,
 				D0F148F428446FF900342A3E /* NSArray+Log.m in Sources */,
 				D0F148BE2844688C00342A3E /* AppDelegate.m in Sources */,
@@ -459,6 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0F148D92844688F00342A3E /* UtilsFrameworkTests.m in Sources */,
+				D04D0771288A629900A5B88C /* SwiftTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,6 +638,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A2P9LX4JPN;
@@ -647,6 +662,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.UtilsFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "UtilsFramework/UtilsFramework-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -656,6 +674,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = A2P9LX4JPN;
@@ -679,6 +698,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.UtilsFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "UtilsFramework/UtilsFramework-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -686,15 +707,26 @@
 		D0F148EC2844688F00342A3E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = $CONFIGURATION_TEMP_DIR/UtilsFramework.build/DerivedSources;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.UtilsFrameworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "UtilsFrameworkTests/UtilsFrameworkTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UtilsFramework.app/UtilsFramework";
 			};
@@ -703,15 +735,25 @@
 		D0F148ED2844688F00342A3E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.UtilsFrameworkTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "UtilsFrameworkTests/UtilsFrameworkTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UtilsFramework.app/UtilsFramework";
 			};
@@ -720,6 +762,7 @@
 		D0F148EF2844688F00342A3E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -735,6 +778,7 @@
 		D0F148F02844688F00342A3E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
